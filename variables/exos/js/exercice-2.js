@@ -1,4 +1,4 @@
-console.log("Script variable-1 chargé !")
+console.log("Script variable-2 chargé !")
 
 //https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
 
