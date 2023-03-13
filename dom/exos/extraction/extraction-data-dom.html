@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Résumé de commande 0323-MTR-586</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+    <script defer src="extraction-dom.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Résumé de commande</h1>
+        </div>
+    </div>
+    <hr/>
+    <!-- DEBUT Section IDENTIFICATION COMMANDE ET CLIENT  -->
+    <div class="row">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Informations de commande</h5>
+                    <dl class="row">
+                        <dt class="col-sm-4">Id</dt>
+                        <dd class="col-sm-8" id="cmd-id">0323-MTR-586</dd>
+                        <dt class="col-sm-4">Date</dt>
+                        <dd class="col-sm-8" id="cmd-date">13-03-2023</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Informations du client</h5>
+                    <dl class="row">
+                        <dt class="col-sm-4">Id Client</dt>
+                        <dd class="col-sm-8" id="cmd-client-id">85DS-652</dd>
+                        <dt class="col-sm-4">Nom complet</dt>
+                        <dd class="col-sm-8" id="cmd-client-nom-complet">Mathieu delquadro</dd>
+                        <dt class="col-sm-4">Téléphone</dt>
+                        <dd class="col-sm-8" id="cmd-client-tel">06-05-04-03-02</dd>
+
+                    </dl>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FIN Section IDENTIFICATION COMMANDE ET CLIENT  -->
+    <hr/>
+    <!-- DEBUT Section DETAILS COMMANDE  -->
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Détails de la commande</h5>
+                    <table class="table" id="cmd-details">
+                        <thead>
+                        <tr>
+                            <th scope="col">Ref</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Prix unitaire</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="cmd-details-ligne">
+                            <th>85-df-9</th>
+                            <td>Siège auto MAXI-COSY</td>
+                            <td>330</td>
+                            <td>1</td>
+                            <td>330</td>
+                        </tr>
+                        <tr class="cmd-details-ligne">
+                            <th>58-rf-98</th>
+                            <td>Biberon MAM</td>
+                            <td>12</td>
+                            <td>3</td>
+                            <td>36</td>
+                        </tr>
+                        <tr class="cmd-details-ligne">
+                            <th>74-fd-65</th>
+                            <td>Tétine nourrisson</td>
+                            <td>6</td>
+                            <td>3</td>
+                            <td>18</td>
+                        </tr>
+
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <th colspan="4" class="text-end">Total HT</th>
+                            <td id="cmd-total-ht">384</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="text-end">TVA (20%)</th>
+                            <td id="cmd-tva">76.80</td>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="text-end">Total</th>
+                            <td id="cmd-total-ttc">460.80</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN Section DETAILS COMMANDE  -->
+
+</div>
+</body>
+</html>
